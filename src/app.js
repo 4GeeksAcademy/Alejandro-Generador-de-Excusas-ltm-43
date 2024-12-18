@@ -8,7 +8,6 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   let first = ["The"];
-  let pronoun = ["We ", "I", "they ", "her ", "his ", "their ", "you "];
   let adj = [
     "friendly ",
     "angry ",
@@ -62,20 +61,17 @@ window.onload = function() {
     "at the train station"
   ];
 
-  let rdm1 = Math.floor(Math.random() * first.length);
-  let rdm2 = Math.floor(Math.random() * pronoun.length);
-  let rdm3 = Math.floor(Math.random() * adj.length);
-  let rdm4 = Math.floor(Math.random() * noun.length);
-  let rdm5 = Math.floor(Math.random() * action.length);
-  let rdm6 = Math.floor(Math.random() * possetion.length);
-  let rdm7 = Math.floor(Math.random() * where.length);
+  let rdm2 = Math.floor(Math.random() * adj.length);
+  let rdm3 = Math.floor(Math.random() * noun.length);
+  let rdm4 = Math.floor(Math.random() * action.length);
+  let rdm5 = Math.floor(Math.random() * possetion.length);
+  let rdm6 = Math.floor(Math.random() * where.length);
 
   document.querySelector("#excuse").innerHTML =
-    first[rdm1] +
-    pronoun[rdm2] +
-    adj[rdm3] +
-    noun[rdm4] +
-    action[rdm5] +
-    possetion[rdm6] +
-    where[rdm7];
+    first +
+    adj[rdm2] +
+    noun[rdm3] +
+    action[rdm4] +
+    possetion[rdm5] +
+    where[rdm6];
 };
