@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  let first = ["The"];
+  let first = ["The "];
   let adj = [
     "friendly ",
     "angry ",
@@ -61,17 +61,18 @@ window.onload = function() {
     "at the train station"
   ];
 
-  let rdm2 = Math.floor(Math.random() * adj.length);
-  let rdm3 = Math.floor(Math.random() * noun.length);
-  let rdm4 = Math.floor(Math.random() * action.length);
-  let rdm5 = Math.floor(Math.random() * possetion.length);
-  let rdm6 = Math.floor(Math.random() * where.length);
+  let firstRandomIndex = Math.floor(Math.random() * first.length);
+  let adjectiveRandomIndex = Math.floor(Math.random() * adj.length);
+  let nounRandomIndex = Math.floor(Math.random() * noun.length);
+  let actionRandomIndex = Math.floor(Math.random() * action.length);
+  let possetionRandomIndex = Math.floor(Math.random() * possetion.length);
+  let whereRandomIndex = Math.floor(Math.random() * where.length);
 
   document.querySelector("#excuse").innerHTML =
-    first +
-    adj[rdm2] +
-    noun[rdm3] +
-    action[rdm4] +
-    possetion[rdm5] +
-    where[rdm6];
+    first[firstRandomIndex] +
+    adj[adjectiveRandomIndex] +
+    noun[nounRandomIndex] +
+    action[actionRandomIndex] +
+    possetion[possetionRandomIndex] +
+    where[whereRandomIndex];
 };
